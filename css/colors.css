@@ -1,5 +1,12 @@
 :root {
-    --dark_blue: #1f2937;
+    /* Background */
+    --dark_blue_bg: #1f2937;
+    /* Hero Main Text */
     --white: #f9faf8;
-    --gray_light: #e5e7eb;
+    /* Hero Secondary Text */
+    --light_gray: #e5e7eb;
+    /* Button */
+    --blue: #3882f6;
+    /* Information Header */
+    --dark_blue: #1f2937;
 }

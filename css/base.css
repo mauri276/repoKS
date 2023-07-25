@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: var(--dark_blue);
+    background-color: var(--dark_blue_bg);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -34,7 +34,7 @@ header{
 
 .menu a{
     font-size: 18px;
-    color: var(--gray_light);
+    color: var(--light_gray);
     text-decoration: none;
 }
 
