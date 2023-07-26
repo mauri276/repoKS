@@ -1,0 +1,76 @@
+@import url("fonts.css");
+@import url("colors.css");
+@import url("base.css");
+
+.form-container {
+    background: #E5E7EB;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    padding: 25px;
+    display: flex;
+    max-width: 650px;
+    margin: 50px auto;
+    flex-direction: column;
+    border: solid 1px var(--blue);
+    border-radius: 10px;
+    align-items: center;
+}
+
+.header-form {
+    text-align: center;
+}
+
+.header-form h2 {
+    color: var(--dark_blue);
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header-form p {
+    color: var(--dark_blue);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contact-form {
+    width: 60%;
+}
+
+.formulario {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.control-name, .control-email, .control-message {
+    background:white;
+    border-radius: 3px;
+    color: var(--light_gray);
+    border-style: none;
+    margin-bottom: 25px;
+    padding: 5px 5px 5px 5px;
+    outline-color: var(--blue);
+    width: 100%;
+}
+
+.control-name::placeholder {
+    color: var(--light_gray);
+}
+
+.control-email::placeholder {
+    color: var(--light_gray);
+}
+
+.control-message::placeholder {
+    color: var(--light_gray);
+}
+
+.submit-button {
+    background: var(--blue);
+    border-radius: 3px;
+    border:solid 1px var(--blue);
+    color: white;
+    margin-bottom: 10px;
+    padding: 6px;
+    float: right;
+}
