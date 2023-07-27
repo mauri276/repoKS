@@ -1,14 +1,16 @@
 @import url("base.css");
 
+/* Intro Section */
 .intro-section{
     display: flex;
-    padding: 10% 15%;
+    padding: 6rem 9rem;
     align-items: center;
+    background-color: var(--dark_blue_bg);
+    gap: 2.7rem;
 }
 
 .left-div{
-    width: 50%;
-    padding: 0 1% 0 0;
+    flex-basis: 50%;
 }
 
 .main-text{
@@ -24,31 +26,137 @@
 }
 
 .sign_up-button{
-    padding: 8px 30px;
+    padding: 6px 30px;
     border-radius: 7px;
-    background: var(--blue);
-    color: var(--light_gray);
     font-weight: 600;
 }
 
+
 .left-div .sign_up-button{
+    align-self: center;
+    color: var(--light_gray);
+    background: var(--blue);
     margin-top: 10px;
     border: 0px;
 }
 
 .right-div{
-    width: 50%;
-    margin-left: 30px;
+    flex-basis: 50%;
 }
 
 .right-div img{
     width: 100%;
     object-fit: cover;
+    object-position: center;
     overflow: hidden;
     height: 225px;
     max-height: 100%;
 }
 
+/* End Intro Section */
+
+/* Information Section */
 .information-section{
-    background-color: var(--light_gray);
+    background-color: var(--white);
+    padding: 2rem;
 }
+
+.information-section h2{
+    margin: 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--dark_blue);
+}
+
+.random_information-container{
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 2rem;
+    justify-content: center;
+}
+
+.random_information-container figure{
+    max-width: 150px;
+    margin: 0;
+}
+
+.img-container{
+    display: inline-block;
+    width: 150px;
+    height: 170px;
+    border: 3px solid var(--blue);
+    border-radius: 20px;
+}
+
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: inherit;
+}
+
+.random_information-container figcaption{
+    font-size: 15px;
+    color: var(--gray);
+    font-weight: normal;
+    text-align: center;
+    margin-top: 10px;
+}
+/* End Information Section */
+
+/* Quote Section */
+
+.quote-section{
+    background-color: var(--light_gray);
+    padding: 6rem 14.5rem;
+}
+
+.quote-section .quote{
+    font-size: 36px;
+    font-weight: 200;
+    color: var(--dark_blue);
+    font-style: italic;
+} 
+
+.quote-section .quote_author{
+    display: block;
+    padding: 0 2rem;
+    font-size: 18px;
+    color: var(--dark_blue);
+    font-weight: bold;
+    text-align: end;
+}
+
+/* End Quote Section */
+
+/* CTA Section */
+
+.cta-section{
+    padding: 5rem 10rem;
+}
+
+.cta-container{
+    display: flex;
+    padding: 3rem 6rem;
+    background-color: var(--blue);
+    border-radius: 7px;
+    justify-content: space-between;
+}
+
+.cta-container .cta-text{
+    color: var(--white);
+}
+
+.cta-container .cta-text{
+    font-weight: 200;
+}
+
+.cta-container .sign_up-button{
+    align-self: center;
+    border: 2px solid var(--white);
+    background-color: var(--blue);
+    color: var(--white);
+}
+/* End CTA Section */

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Contact Page</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Header Logo</a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Games</a></li>
+                <li><a href="#">header link two</a></li>
+                <li><a href="#">header link three</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <div class="header-form">
+                <h2> Get in touch with us!! <i class="fas fa-paper-plane"></i> </h2> 
+                <p> please drop us a line and we will get in touch within the next 24h</p>
+            </div>
+            <div class="contact-form">
+                <form action="" method="POST" class="formulario">
+                    <input class="control-name" type="text" name="name" id="name" placeholder="Name" required>
+                    <input class="control-email" type="email" name="email" id="email" placeholder="Email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
+                    <textarea class="control-message" type="content" name="message" id="message" placeholder="Message" rows="7" required></textarea>
+                    <input class="submit-button" type="submit" value="Send">
+                </form>
+            </div>
+        </div>    
+    </main>
+    <footer class="footer">
+        <div class="f-logo-container">
+            <img src="./img/logo - circle.png" alt="logo Kreativstorm Games">
+        </div>
+        <div class="f-links-container">
+            <div class="f-first-row">
+                <div class="newsletter-container">
+                    <p>Subscribe to our newsletter</p>
+                    <input type="text" placeholder="example@mail.com">
+                </div>
+                <div class="footer-links">
+                    <a href="./index.html">Home</a>
+                    <a href="">Store</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+            </div>  
+            <div class="f-second-row"></div>
+            <div class="f-third-row">
+                <div class="copyright">
+                    <p>copyright © 2023 - All rights reserved</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
