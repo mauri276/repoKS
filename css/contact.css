@@ -73,4 +73,138 @@
     margin-bottom: 10px;
     padding: 6px;
     float: right;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+/* footer */
+
+.footer {
+    background: var(--dark_blue_bg);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--light_gray);
+    font-size: 16px;
+    padding: 20px;  
+}
+
+.f-logo-container {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-logo-container img {
+    width: 60px;
+}
+
+.f-links-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.f-first-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.newsletter-container p {
+    color: var(--light_gray);
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.newsletter-container:-ms-input-placeholder,
+.newsletter-container::placeholder {
+    color: var(--light_gray);
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: var(--light_gray);
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-links a:hover {
+    color: var(--blue);
+}
+
+.f-second-row {
+    background-color: var(--light_gray);
+    height: 1px;
+    margin: 20px 0px;
+}
+
+.f-third-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright p {
+    font-size: 10px;
+}
+
+.social-media a {
+    background-color: var(--light_gray);
+    border-radius: 100%;
+    padding: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.fa-twitch, .fa-facebook, .fa-youtube, .fa-instagram, .fa-twitter {
+    color: var(--dark_blue_bg);
+}
+
+.social-media a:hover {
+    background-color: var(--dark_blue_bg);
+}
+.fa-twitch:hover, .fa-facebook:hover, .fa-youtube:hover, .fa-instagram:hover, .fa-twitter:hover {
+    color: var(--blue);
+}
+
+@media screen and (max-width: 800px) {
+    .newsletter-container p {
+        font-size: 14px;
+    }
+
+    .newsletter-container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .newsletter-container::placeholder {
+        font-size: 12px;
+    }
+    
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    .f-links-container {
+        padding: 0px;
+    }
+
+    .social-media a {
+        font-size: 10px;
+    }
 }
