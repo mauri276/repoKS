@@ -130,7 +130,8 @@
     margin-right: 10px;
 }
 
-.newsletter-container:-ms-input-placeholder {
+.newsletter-container:-ms-input-placeholder,
+.newsletter-container::placeholder {
     color: var(--light_gray);
     font-size: 14px;
 }
@@ -167,6 +168,7 @@
     border-radius: 100%;
     padding: 5px;
     margin-right: 5px;
+    font-size: 20px;
 }
 
 .fa-twitch, .fa-facebook, .fa-youtube, .fa-instagram, .fa-twitter {
@@ -178,4 +180,31 @@
 }
 .fa-twitch:hover, .fa-facebook:hover, .fa-youtube:hover, .fa-instagram:hover, .fa-twitter:hover {
     color: var(--blue);
+}
+
+@media screen and (max-width: 800px) {
+    .newsletter-container p {
+        font-size: 14px;
+    }
+
+    .newsletter-container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .newsletter-container::placeholder {
+        font-size: 12px;
+    }
+    
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    .f-links-container {
+        padding: 0px;
+    }
+
+    .social-media a {
+        font-size: 10px;
+    }
 }
