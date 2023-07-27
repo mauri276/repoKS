@@ -3,14 +3,14 @@
 /* Intro Section */
 .intro-section{
     display: flex;
-    padding: 10% 15%;
     padding: 6rem 9rem;
     align-items: center;
+    background-color: var(--dark_blue_bg);
+    gap: 2.7rem;
 }
 
 .left-div{
-    width: 50%;
-    padding: 0 .5rem 0 0;
+    flex-basis: 50%;
 }
 
 .main-text{
@@ -31,7 +31,9 @@
     background: var(--blue);
     color: var(--light_gray);
     font-weight: 600;
+    align-self: center;
 }
+
 
 .left-div .sign_up-button{
     margin-top: 10px;
@@ -39,13 +41,13 @@
 }
 
 .right-div{
-    width: 50%;
-    margin-left: 30px;
+    flex-basis: 50%;
 }
 
 .right-div img{
     width: 100%;
     object-fit: cover;
+    object-position: center;
     overflow: hidden;
     height: 225px;
     max-height: 100%;
@@ -55,8 +57,8 @@
 
 /* Information Section */
 .information-section{
-    background-color: var(--light_gray);
-    padding: 2rem 13rem;
+    background-color: var(--white);
+    padding: 2rem;
 }
 
 .information-section h2{
@@ -68,15 +70,16 @@
 }
 
 .random_information-container{
-    margin-top: 3rem;
+    margin: 3rem 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    grid-template-columns: repeat(4, 150px);
+    gap: 2rem;
+    justify-content: center;
 }
 
 .random_information-container figure{
     max-width: 150px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .img-container{
@@ -99,6 +102,31 @@
     color: var(--gray);
     font-weight: normal;
     text-align: center;
+    margin-top: 10px;
+}
+/* End Information Section */
+
+/* Quote Section */
+
+.quote-section{
+    background-color: var(--light_gray);
+    padding: 6rem 14.5rem;
 }
 
-/* End Information Section */
+.quote-section .quote{
+    font-size: 36px;
+    font-weight: 200;
+    color: var(--dark_blue);
+    font-style: italic;
+} 
+
+.quote-section .quote_author{
+    display: block;
+    padding: 0 2rem;
+    font-size: 18px;
+    color: var(--dark_blue);
+    font-weight: bold;
+    text-align: end;
+}
+
+/* End Quote Section */
