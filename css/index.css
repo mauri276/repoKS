@@ -26,16 +26,16 @@
 }
 
 .sign_up-button{
-    padding: 8px 30px;
+    padding: 6px 30px;
     border-radius: 7px;
-    background: var(--blue);
-    color: var(--light_gray);
     font-weight: 600;
-    align-self: center;
 }
 
 
 .left-div .sign_up-button{
+    align-self: center;
+    color: var(--light_gray);
+    background: var(--blue);
     margin-top: 10px;
     border: 0px;
 }
@@ -130,3 +130,33 @@
 }
 
 /* End Quote Section */
+
+/* CTA Section */
+
+.cta-section{
+    padding: 5rem 10rem;
+}
+
+.cta-container{
+    display: flex;
+    padding: 3rem 6rem;
+    background-color: var(--blue);
+    border-radius: 7px;
+    justify-content: space-between;
+}
+
+.cta-container .cta-text{
+    color: var(--white);
+}
+
+.cta-container .cta-text{
+    font-weight: 200;
+}
+
+.cta-container .sign_up-button{
+    align-self: center;
+    border: 2px solid var(--white);
+    background-color: var(--blue);
+    color: var(--white);
+}
+/* End CTA Section */
