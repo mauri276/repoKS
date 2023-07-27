@@ -3,7 +3,7 @@
 @import url("base.css");
 
 .form-container {
-    background: #E5E7EB;
+    background: var(--light_gray);
     box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
     padding: 25px;
     display: flex;

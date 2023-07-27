@@ -9,17 +9,17 @@
 }
 
 body{
-    background-color: white;
+    background-color: var(--white);
     font-family: 'Roboto', sans-serif;
 }
 
 /* Header and navbar */
 header{
+    background-color: var(--dark_blue_bg);
     padding: 10px 0;
 }
 .navbar{
     display: flex;
-    background-color: var(--dark_blue_bg);
 }
 
 .menu{
