@@ -1,7 +1,7 @@
 @import url(base.css);
 .cover img{
-    width: 340px;
-    height: 300px;
+    width: 150px;
+    height: 170px;
     border-radius: 10px;
     margin-right: 1em;
     display: inline-block;
