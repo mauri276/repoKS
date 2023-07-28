@@ -94,13 +94,19 @@ header{
 .newsletter-container p {
     color: var(--light_gray);
     font-size: 16px;
+    margin: auto 0;
     margin-right: 10px;
+
 }
 
 .newsletter-container:-ms-input-placeholder,
 .newsletter-container::placeholder {
     color: var(--light_gray);
     font-size: 14px;
+}
+
+.footer-links{
+    margin: auto 0;
 }
 
 .footer-links a {
@@ -133,7 +139,7 @@ header{
 .social-media a {
     background-color: var(--light_gray);
     border-radius: 100%;
-    padding: 5px;
+    padding: 8px 9.5px;
     margin-right: 5px;
     font-size: 20px;
 }
@@ -142,11 +148,14 @@ header{
     color: var(--dark_blue_bg);
 }
 
-.social-media a:hover {
+.social-media a:hover{
     background-color: var(--dark_blue_bg);
+    transition: all .3s ease;
 }
-.fa-twitch:hover, .fa-facebook:hover, .fa-youtube:hover, .fa-instagram:hover, .fa-twitter:hover {
+
+.social-media a:hover .fa-twitch, .social-media a:hover .fa-facebook, .social-media a:hover .fa-youtube, .social-media a:hover .fa-instagram, .social-media a:hover .fa-twitter {
     color: var(--blue);
+    transition: color .9s ease;
 }
 
 /* Responsive Footer */
