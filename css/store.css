@@ -1,9 +1,12 @@
 @import url(base.css);
 .cover img{
-    height: 150px;
-    width: auto;
+    width: 340px;
+    height: 300px;
     border-radius: 10px;
     margin-right: 1em;
+    display: inline-block;
+    border: 3px solid var(--blue);
+    border-radius: 20px;
 }
 .flex{
     display: flex;
