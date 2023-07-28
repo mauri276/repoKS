@@ -1,0 +1,57 @@
+@import url(base.css);
+.cover img{
+    width: 150px;
+    height: 170px;
+    border-radius: 10px;
+    margin-right: 1em;
+    display: inline-block;
+    border: 3px solid var(--blue);
+    border-radius: 20px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.flex1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.quote-container{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    position: relative;
+    margin-right: 20px;
+}
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 425px;
+    height: 425px;
+    border-radius: 50%;
+    background-color: var(--light_gray);
+}
+.text{
+    text-align: center;
+    font-size: 36px;
+    font-style: light italic;
+    color: #1F2937;
+
+}
+.button-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3882f6;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #3882f6;
+    border-radius: 5px;
+  }
