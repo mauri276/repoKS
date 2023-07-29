@@ -1,57 +1,90 @@
-@import url(base.css);
-.cover img{
-    width: 150px;
-    height: 170px;
-    border-radius: 10px;
-    margin-right: 1em;
-    display: inline-block;
-    border: 3px solid var(--blue);
-    border-radius: 20px;
-}
-.flex{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
-}
-.flex1{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-.quote-container{
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
-    position: relative;
-    margin-right: 20px;
-}
-.circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 425px;
-    height: 425px;
-    border-radius: 50%;
-    background-color: var(--light_gray);
-}
-.text{
-    text-align: center;
-    font-size: 36px;
-    font-style: light italic;
-    color: #1F2937;
+@import url("base.css");
 
+.games-section{
+    background-color: var(--white);
+    padding: 5rem;
 }
-.button-container{
-    margin-top: 10px;
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.games-container .row:last-child{
+    margin-top: 3rem;
+}
+
+.games-container figure{
+    background-color: var(--dark_blue);
+    flex-basis: 230px;
+}
+
+.games-container figure:hover{
+    box-shadow: 0px 6px 10px var(--gray);
+}
+
+.img-container{
+    width: 230px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.img-container img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: inherit;
+    object-position: center;
+    transition: all 0.5s ease;
+}
+
+.img-container img:hover{
+    transform: scale(1.08);
+    transition: all 0.5s ease;
+}
+
+.games-container figcaption{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    font-size: 15px;
+    color: var(--white);
+    text-align: left;
+    justify-content: baseline;
+}
+
+.games-container figcaption h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.games-container figcaption span{
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.games-container figcaption strong{
+    display: block;
+    color: var(--white);
+    font-size: 22px;
+}
+
+.btn-container{
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
 }
+
 .custom-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #3882f6;
-    color: #fff;
+    background-color: var(--blue);
+    color: var(--white);
     text-decoration: none;
-    border: 2px solid #3882f6;
+    border: 2px solid var(--blue);
     border-radius: 5px;
-  }
+}
