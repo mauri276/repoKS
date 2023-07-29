@@ -87,14 +87,15 @@
 
 .random_information-container{
     margin: 3rem 0;
-    display: grid;
-    grid-template-columns: repeat(4, 230px);
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
 }
 
 .random_information-container figure{
-    max-width: 230px;
+    background-color: var(--dark_blue);
 }
 
 .random_information-container figure:hover{
@@ -129,7 +130,6 @@
     font-size: 15px;
     color: var(--white);
     text-align: left;
-    background-color: var(--dark_blue);
     justify-content: baseline;
 }
 
@@ -184,7 +184,7 @@
 
 .cta-container{
     display: flex;
-    padding: 3rem 6rem;
+    padding: 3rem 5rem;
     background-color: var(--blue);
     border-radius: 7px;
     justify-content: space-between;
@@ -192,6 +192,7 @@
 
 .cta-container .cta-text{
     color: var(--white);
+    flex-basis: 80%;
 }
 
 .cta-container .cta-text{
