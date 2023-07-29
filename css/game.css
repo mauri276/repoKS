@@ -43,11 +43,6 @@
     border: 2px solid var(--blue);
     border-radius: 10px;
 }
-button{
-    background-color: var(--blue);
-    padding: 5px 10px;
-    border-radius: 10px;
-}
 .radio-btn input{
     margin-bottom: 10px;
 }
@@ -61,6 +56,8 @@ button{
     margin-top: 10px;
     color: var(--white);
     font-weight: bold;
+    background-color: var(--blue);
+    border-radius: 10px;
 }
 .purchase button:hover{
     color: var(--dark_blue);
